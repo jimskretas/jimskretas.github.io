@@ -12,7 +12,7 @@
 </head>
 
 <body class="text-center" data-spy="scroll" data-target=".navbar" data-offset="10">
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-secondary fixed-top">
     <a class="navbar-brand" href="#home">Jim S.</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -28,41 +28,48 @@
   
   <!-- Home/About me section -->
   <a id="home" name="home"></a>
-  <header>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 my-5">
-          <h3 class="d-block text-left">Jim Skretas-Kazakis</h3>
-          <p class="text-left">I am a Web Developer located in Thessaloniki, Greece. I am looking to increase my skills as a Web Developer and find a job as a Full Stack Developer.</p>
-          <table class="table table-borderless">
-            <tr class="text-left">
-              <td><b>EMAIL</b></td>
-              <td>jimskretas@gmail.com</td>
-            </tr>
-            <tr class="text-left">
-              <td><b>SOCIAL</b></td>
-              <td>
-                <a href="https://github.com/jimskretas/" target="_blank"><i class="fab fa-github fa-lg mr-3"></i></a>
-                <a href="https://www.linkedin.com/in/jimskretas/" target="_blank"><i class="fab fa-linkedin-in fa-lg mr-3"></i></a>
-              </td>
-          </table>
-          <a href="https://drive.google.com/open?id=13l_khkO_fg7L_BHUVkX1cwssmRnAeGsI" target="_blank" class="btn btn-info">Download CV</a>
+  <header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+      <!-- Masthead Avatar Image -->
+      <img class="masthead-avatar mb-5" src="https://res.cloudinary.com/jimskretas/image/upload/v1563131503/my_avatar.svg" alt="">
+
+      <!-- Masthead Heading -->
+      <h1 class="masthead-heading">Jim Skretas-Kazakis</h1>
+      <p class="masthead-subheading font-weight-light mb-0">Web Developer</p>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
         </div>
-        <div class="col-md-6 my-5">
-          <img src="https://res.cloudinary.com/jimskretas/image/upload/v1562268222/laptop-coding.jpg" class="rounded img-fluid" alt="Coding Laptop"> 
-        </div>
+        <div class="divider-custom-line"></div>
       </div>
+
+      <!-- Masthead Subheading -->
+      <p class="masthead-subheading font-weight-light">jimskretas@gmail.com</p>
+      <ul class="list-inline"><span>
+        <li class="list-inline-item"><a class="btn btn-outline-light btn-circle" href="https://github.com/jimskretas/" target="_blank"><i class="fab fa-github fa-lg"></i></a></li>
+        <li class="list-inline-item"><a class="btn btn-outline-light" href="https://drive.google.com/open?id=13l_khkO_fg7L_BHUVkX1cwssmRnAeGsI" target="_blank"><i class="fas fa-download fa-lg"></i> Download CV</a></li>
+        <li class="list-inline-item"><a class="btn btn-outline-light btn-circle" href="https://www.linkedin.com/in/jimskretas/" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a></li></span>
+      </ul>
     </div>
-  </header>
+  </header>  
 
   <!-- Portfolio section  -->
-  <a id="portfolio" name="portfolio"></a>
-  <div class="row my-3">
-    <div class="col"><hr></div>
-    <div class="col-auto"><h2>Portfolio</h2></div>
-    <div class="col"><hr></div>
-  </div>
-  <section class="portfolio-page container">
+  <a id="portfolio" name="portfolio"></a>  
+  <section class="page-section portfolio-page container">
+    <!-- Portfolio Section Heading -->
+    <h2 class="page-section-heading text-center text-secondary mb-0">Portfolio</h2>
+    <!-- Icon Divider -->
+    <div class="divider-custom">
+      <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+      <div class="divider-custom-line"></div>
+    </div>
+    
     <div class="row no-gutters">
       <div class="col-md-4 mb-2 d-flex align-items-stretch">
         <div class="card">
@@ -71,8 +78,8 @@
             <h5 class="card-title">Calculator</h5>
             <p class="card-text">HTML, CSS, Bootstrap, React</p>
           </div>
-          <div class="card-footer">
-            <a href="https://codepen.io/jimskretas/full/eLdbvW" target="_blank" class="btn btn-dark">Codepen <i class="fab fa-codepen fa-lg"></i></a>
+          <div class="card-footer bg-primary">
+            <a href="https://codepen.io/jimskretas/full/eLdbvW" target="_blank" class="btn btn-outline-light">Codepen <i class="fab fa-codepen fa-lg"></i></a>
           </div>
         </div>
       </div>
@@ -80,11 +87,11 @@
         <div class="card">
           <img src="https://codepen.io/jimskretas/pen/KBELmO/image/large.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Pomodoro Clock</h5>
+            <h5 class="card-title mt-2">Pomodoro Clock</h5>
             <p class="card-text">HTML, CSS, Bootstrap, React</p>
           </div>
-          <div class="card-footer">
-            <a href="https://codepen.io/jimskretas/full/KBELmO" target="_blank" class="btn btn-dark">Codepen <i class="fab fa-codepen fa-lg"></i></a>
+          <div class="card-footer bg-primary">
+            <a href="https://codepen.io/jimskretas/full/KBELmO" target="_blank" class="btn btn-outline-light">Codepen <i class="fab fa-codepen fa-lg"></i></a>
           </div>
         </div>
       </div>
@@ -95,8 +102,8 @@
             <h5 class="card-title">Markdown Previewer</h5>
             <p class="card-text">HTML, CSS, Bootstrap, React</p>
           </div>
-          <div class="card-footer">
-            <a href="https://codepen.io/jimskretas/full/QVvrqz" target="_blank" class="btn btn-dark">Codepen <i class="fab fa-codepen fa-lg"></i></a>
+          <div class="card-footer bg-primary">
+            <a href="https://codepen.io/jimskretas/full/QVvrqz" target="_blank" class="btn btn-outline-light">Codepen <i class="fab fa-codepen fa-lg"></i></a>
           </div>
         </div>
       </div>
@@ -107,10 +114,10 @@
           <img src="https://codepen.io/jimskretas/pen/owPJye/image/large.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Random Quote Generator</h5>
-            <p class="card-text">HTML, CSS, Bootstrap, Javascript, Twitter API</p>
+            <p class="card-text">HTML, CSS, Bootstrap, jQuery, Twitter API</p>
           </div>
-          <div class="card-footer">
-            <a href="https://codepen.io/jimskretas/full/owPJye" target="_blank" class="btn btn-dark">Codepen <i class="fab fa-codepen fa-lg"></i></a>
+          <div class="card-footer bg-primary">
+            <a href="https://codepen.io/jimskretas/full/owPJye" target="_blank" class="btn btn-outline-light">Codepen <i class="fab fa-codepen fa-lg"></i></a>
           </div>
         </div>
       </div>
@@ -118,11 +125,11 @@
         <div class="card">
           <img src="https://codepen.io/jimskretas/pen/MvwwRa/image/large.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Simon Game</h5>
+            <h5 class="card-title mt-2">Simon Game</h5>
             <p class="card-text">HTML, CSS, Bootstrap, jQuery</p>
           </div>
-          <div class="card-footer">
-            <a href="https://codepen.io/jimskretas/full/MvwwRa" target="_blank" class="btn btn-dark">Codepen <i class="fab fa-codepen fa-lg"></i></a>
+          <div class="card-footer bg-primary">
+            <a href="https://codepen.io/jimskretas/full/MvwwRa" target="_blank" class="btn btn-outline-light">Codepen <i class="fab fa-codepen fa-lg"></i></a>
           </div>
         </div>
       </div>
@@ -133,8 +140,8 @@
             <h5 class="card-title">Weather App</h5>
             <p class="card-text">HTML, CSS, Bootstrap, jQuery, Weather API</p>
           </div>
-          <div class="card-footer">
-            <a href="https://codepen.io/jimskretas/full/rwbjLa" target="_blank" class="btn btn-dark">Codepen <i class="fab fa-codepen fa-lg"></i></a>
+          <div class="card-footer bg-primary">
+            <a href="https://codepen.io/jimskretas/full/rwbjLa" target="_blank" class="btn btn-outline-light">Codepen <i class="fab fa-codepen fa-lg"></i></a>
           </div>
         </div>
       </div>
@@ -147,8 +154,8 @@
             <h5 class="card-title">Tic-Tac-Toe Game</h5>
             <p class="card-text">HTML, CSS, Bootstrap, jQuery</p>
           </div>
-          <div class="card-footer">
-            <a href="https://codepen.io/jimskretas/full/dzPJaX" target="_blank" class="btn btn-dark">Codepen <i class="fab fa-codepen fa-lg"></i></a>
+          <div class="card-footer bg-primary">
+            <a href="https://codepen.io/jimskretas/full/dzPJaX" target="_blank" class="btn btn-outline-light">Codepen <i class="fab fa-codepen fa-lg"></i></a>
           </div>
         </div>
       </div>
@@ -156,11 +163,11 @@
         <div class="card">
           <img src="https://codepen.io/jimskretas/pen/aKgRxP/image/large.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Survey Form</h5>
+            <h5 class="card-title mt-2">Survey Form</h5>
             <p class="card-text">HTML, CSS, Bootstrap</p>
           </div>
-          <div class="card-footer">
-            <a href="https://codepen.io/jimskretas/full/aKgRxP" target="_blank" class="btn btn-dark">Codepen <i class="fab fa-codepen fa-lg"></i></a>
+          <div class="card-footer bg-primary">
+            <a href="https://codepen.io/jimskretas/full/aKgRxP" target="_blank" class="btn btn-outline-light">Codepen <i class="fab fa-codepen fa-lg"></i></a>
           </div>
         </div>
       </div>
@@ -168,11 +175,11 @@
         <div class="card">
           <img src="https://codepen.io/jimskretas/pen/weVdJB/image/large.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Wikipedia Viewer</h5>
-            <p class="card-text">HTML, CSS, Bootstrap, jQuery, Wikipedia API</p>
+            <h5 class="card-title">Random Quote Generator</h5>
+            <p class="card-text">HTML, CSS, Bootstrap, jQuery, Twitter API</p>
           </div>
-          <div class="card-footer">
-            <a href="https://codepen.io/jimskretas/full/weVdJB" target="_blank" class="btn btn-dark">Codepen <i class="fab fa-codepen fa-lg"></i></a>
+          <div class="card-footer bg-primary">
+            <a href="https://codepen.io/jimskretas/full/weVdJB" target="_blank" class="btn btn-outline-light">Codepen <i class="fab fa-codepen fa-lg"></i></a>
           </div>
         </div>
       </div>
@@ -181,29 +188,35 @@
   
   <!-- Skills section -->
   <a id="skills" name="skills"></a>
-  <div class="row my-3">
-    <div class="col"><hr></div>
-    <div class="col-auto"><h2>Skills</h2></div>
-    <div class="col"><hr></div>
-  </div>
-  <section class="container">
-    <div class="row">
-      <div class="col-md-6 my-3">
-        <h4 class="d-block text-right">Front-End</h4>
-        <p class="text-right">HTML5, CSS3, SASS, Bootstrap, Javascript, jQuery, React</p>
-        <hr>
-        <h4 class="d-block text-right">Project Managment</h4>
-        <p class="text-right">Git, Github, Trello, Slack, Travis CI, Docker</p>
+  <section class="page-section bg-primary text-white mb-0">
+    <div class="container">
+      <h2 class="page-section-heading text-center text-secondary text-white">Skills</h2>
+
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
       </div>
-      <div class="col-md-6 my-3">
-        <h4 class="d-block text-left">Back-End</h4>
-        <p class="text-left">Python, Django, Flask, Java, SQL, SQLite, mySQL</p>
-        <hr>
-        <h4 class="d-block text-left">Other</h4>
-        <p class="text-left">R, C, Matlab, SEO, Agile, Microsoft Office Suite, ROS</p>
+
+      <div class="row">
+        <div class="col-md-6 my-3">
+          <h4 class="d-block text-right">Front-End</h4>
+          <p class="text-right">HTML5, CSS3, SASS, Bootstrap, Javascript, jQuery, React</p>
+          <hr>
+          <h4 class="d-block text-right">Project Managment</h4>
+          <p class="text-right">Git, Github, Trello, Slack, Travis CI, Docker</p>
+        </div>
+        <div class="col-md-6 my-3 text-left">
+          <h4 class="d-block">Back-End</h4>
+          <p>Python, Django, Java, SQL, SQLite, mySQL</p>
+          <hr>
+          <h4 class="d-block">Other</h4>
+          <p>R, C, Matlab, SEO, Agile, Microsoft Office Suite, ROS</p>
+        </div>
       </div>
     </div>
-
   </section>
   
   <!-- footer -->
@@ -211,15 +224,15 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
-          <p>Find me here:</p>
+          <p>SOCIAL</p>
           <ul class="list-inline"><span>
-            <li class="list-inline-item"><a href="https://github.com/jimskretas/" target="_blank"><i class="fab fa-github fa-lg"></i></a></li>
-            <li class="list-inline-item"><a href="https://www.linkedin.com/in/jimskretas/" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a></li></span>
+            <li class="list-inline-item"><a class="btn btn-outline-light btn-circle" href="https://github.com/jimskretas/" target="_blank"><i class="fab fa-github fa-lg"></i></a></li>
+            <li class="list-inline-item"><a class="btn btn-outline-light btn-circle" href="https://www.linkedin.com/in/jimskretas/" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a></li></span>
           </ul>
         </div>
         <div class="col-sm-6">
-          <p>My Resume:</p>
-          <a href="https://drive.google.com/open?id=13l_khkO_fg7L_BHUVkX1cwssmRnAeGsI" target="_blank"><i class="far fa-file-alt fa-lg"></i></a>
+          <p>RESUME</p>
+          <a class="btn btn-outline-light btn-circle" href="https://drive.google.com/open?id=13l_khkO_fg7L_BHUVkX1cwssmRnAeGsI" target="_blank"><i class="far fa-file-alt fa-lg"></i></a>
         </div>
       </div>
     </div>
