@@ -13,11 +13,13 @@
   <!-- Custom fonts for this template -->
   <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css'>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css'>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
 
   <!-- Custom styles for this template -->
   <link href="styles.css" rel="stylesheet">
@@ -27,7 +29,7 @@
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">Jim S.</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,24 +55,18 @@
       <div class="intro-text">
         <h1 class="intro-heading">Jim Skretas Kazakis</h1>
         <h4 class="intro-lead-in">Web Developer</h4>
-        <ul class="list-inline mt-4">
-          <li class="list-inline-item">
-            <a href="https://github.com/jimskretas/" class="btn btn-primary" target="_blank">
-              <i class="fab fa-github fa-lg"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://drive.google.com/file/d/1Q9r8wl_qP-0RQpCJD4TuRlxDQ4s5h4rZ/view?usp=sharing" class="btn btn-primary" target="_blank">
-              Download CV <i class="fas fa-download fa-lg"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://www.linkedin.com/in/jimskretas/" class="btn btn-primary" target="_blank">
-              <i class="fab fa-linkedin-in fa-lg"></i>
-            </a>
-          </li>
-        </ul>
         <h5>jimskretas@gmail.com</h5>
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <a href="https://github.com/jimskretas/" class="btn btn-primary" target="_blank">
+            <i class="fab fa-github fa-lg"></i>
+          </a>
+          <a href="https://drive.google.com/file/d/1Q9r8wl_qP-0RQpCJD4TuRlxDQ4s5h4rZ/view?usp=sharing" class="btn btn-primary" target="_blank">
+            Download CV <i class="fas fa-download fa-lg"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/jimskretas/" class="btn btn-primary" target="_blank">
+            <i class="fab fa-linkedin-in fa-lg"></i>
+          </a>
+        </div>
       </div>
     </div>
   </header>
@@ -85,8 +81,8 @@
       </div>
       <h4>Simple Projects</h4>
       <p class="text-muted">Made with HTML, CSS, Bootstrap, jQuery, React and APIs</p>
-      <div class="row">
-        <div class="col-md-4 col-sm-6 portfolio-item">
+      <div class="carousel-items">
+        <div class="portfolio-item mx-2">
           <a class="portfolio-link" href="https://codepen.io/jimskretas/full/eLdbvW" target="_blank">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -99,7 +95,7 @@
             <h4>Calculator</h4>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
+        <div class="portfolio-item mx-2">
           <a class="portfolio-link" href="https://codepen.io/jimskretas/full/KBELmO" target="_blank">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -112,7 +108,7 @@
             <h4>Pomodoro Clock</h4>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
+        <div class="portfolio-item mx-2">
           <a class="portfolio-link" href="https://codepen.io/jimskretas/full/QVvrqz" target="_blank">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -125,7 +121,7 @@
             <h4>Markdown Previewer</h4>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
+        <div class="portfolio-item mx-2">
           <a class="portfolio-link" href="https://codepen.io/jimskretas/full/ymPvzY" target="_blank">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -138,7 +134,7 @@
             <h4>Tetris</h4>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
+        <div class="portfolio-item mx-2">
           <a class="portfolio-link" href="https://codepen.io/jimskretas/full/rwbjLa" target="_blank">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -151,7 +147,7 @@
             <h4>Weather App</h4>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
+        <div class="portfolio-item mx-2">
           <a class="portfolio-link" href="https://codepen.io/jimskretas/full/MvwwRa" target="_blank">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -162,6 +158,45 @@
           </a>
           <div class="portfolio-caption">
             <h4>Simon Game</h4>
+          </div>
+        </div>
+        <div class="portfolio-item mx-2">
+          <a class="portfolio-link" href="https://codepen.io/jimskretas/full/dzPJaX" target="_blank">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fab fa-codepen fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="https://codepen.io/jimskretas/pen/dzPJaX/image/large.png" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Tic-Tac-Toe</h4>
+          </div>
+        </div>
+        <div class="portfolio-item mx-2">
+          <a class="portfolio-link" href="https://codepen.io/jimskretas/full/aKgRxP" target="_blank">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fab fa-codepen fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="https://codepen.io/jimskretas/pen/aKgRxP/image/large.png" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Survey Form</h4>
+          </div>
+        </div>
+        <div class="portfolio-item mx-2">
+          <a class="portfolio-link" href="https://codepen.io/jimskretas/full/weVdJB" target="_blank">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fab fa-codepen fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="https://codepen.io/jimskretas/pen/weVdJB/image/large.png" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Wikipedia Viewer</h4>
           </div>
         </div>
       </div>
@@ -267,6 +302,9 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'></script>
   <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
   
+  <!-- Slick -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
   <!-- Custom scripts -->
   <script src="main.js"></script>
 
