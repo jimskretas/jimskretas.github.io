@@ -23,6 +23,7 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
     />
+
     <link
       rel="stylesheet"
       type="text/css"
@@ -35,6 +36,11 @@
       type="text/css"
     />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="styles.min.css" type="text/css" />
   </head>
 
@@ -42,7 +48,9 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">JS</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"
+          >&lt;JS/&gt;</a
+        >
         <button
           class="navbar-toggler navbar-toggler-right"
           type="button"
@@ -72,8 +80,8 @@
 
     <!-- Header -->
     <header class="masthead">
-      <div class="container">
-        <div class="intro-text">
+      <div class="container center">
+        <div class="intro-text my-auto">
           <h1 class="intro-heading">Jim Skretas</h1>
           <h4 class="intro-lead-in">Web Developer</h4>
           <div class="pb-4" aria-label="Social Icons">
@@ -110,7 +118,7 @@
                   data-toggle="tooltip"
                   data-placement="bottom"
                   title="Resume"
-                  href="https://drive.google.com/file/d/12gsVEuNyUjStm7vOn1mZz6uWXJ8EGD4V/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1VL_DZ8JRBoBmdAwIz5cMlw6MmmQimTO3/view?usp=sharing"
                   target="_blank"
                   rel="noopener"
                   aria-label="Download my resume"
@@ -123,7 +131,7 @@
       </div>
     </header>
 
-    <!-- Portfolio Grid -->
+    <!-- Portfolio -->
     <section class="bg-light page-section" id="portfolio">
       <div class="container">
         <div class="row">
@@ -131,6 +139,80 @@
             <h2 class="section-heading text-uppercase pb-5">Portfolio</h2>
           </div>
         </div>
+        <!-- QR Order -->
+        <div class="row mb-5">
+          <div class="col-md-4 col-xs-12 text-center portfolio-item">
+            <div class="portfolio-link" target="_blank">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <a
+                    href="https://qr-order.netlify.app/"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Check the site"
+                    ><i class="fas fa-link fa-3x text-white mr-4"></i
+                  ></a>
+                  <a
+                    href="https://github.com/codeavor/qr-order"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Check the code on github"
+                    ><i class="fab fa-github fa-3x text-white"></i
+                  ></a>
+                </div>
+              </div>
+              <img
+                class="img-fluid"
+                src="https://res.cloudinary.com/jimskretas/image/upload/v1614365248/qr-order.webp"
+                alt="Image showing the app."
+              />
+            </div>
+          </div>
+          <div class="col-md-8 col-xs-12 px-3">
+            <h4 class="text-md-left text-center mt-md-0 mt-2">QR Order</h4>
+            <p class="text-md-left text-center">
+              App that lets you order just by scanning a QR Code. <br />
+              <a
+                href="https://qr-order.netlify.app/authentication/1"
+                target="_blank"
+                rel="noopener"
+                aria-label="Customer demo link"
+                >Customer demo</a
+              >
+              |
+              <a
+                href="https://qr-order.netlify.app/authentication/0"
+                target="_blank"
+                rel="noopener"
+                aria-label="Kitchen demo link"
+                >Kitchen demo</a
+              >
+            </p>
+
+            <div class="row">
+              <div class="col-sm-6 col-xs-12 pb-4">
+                <h6>Features:</h6>
+                <ul>
+                  <li>Add items to your cart</li>
+                  <li>Make an order without the need of a waiter</li>
+                  <li>Admin page with all the orders</li>
+                  <li>No register/download required</li>
+                </ul>
+              </div>
+              <div class="col-sm-6 col-xs-12">
+                <h6>Tools Used:</h6>
+                <ul>
+                  <li>React</li>
+                  <li>Material UI</li>
+                  <li>PHP (Laravel & JWT)</li>
+                  <li>PostgreSQL</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Productive Corner -->
         <div class="row mb-5">
           <div class="col-md-4 col-xs-12 text-center portfolio-item">
             <div class="portfolio-link" target="_blank">
@@ -154,25 +236,26 @@
               </div>
               <img
                 class="img-fluid"
-                src="https://res.cloudinary.com/jimskretas/image/upload/v1586500171/productive-corner.webp"
+                src="https://res.cloudinary.com/jimskretas/image/upload/v1614365247/productive-corner-latest.webp"
                 alt="Image showing the app."
               />
             </div>
           </div>
           <div class="col-md-8 col-xs-12 px-3">
-            <h4 class="text-md-left text-center mt-md-0 mt-2 d-inline-block">
+            <h4 class="text-md-left text-center mt-md-0 mt-2">
               Productive Corner
             </h4>
             <p class="text-md-left text-center">
               MERN app with Trello-like interface.
             </p>
             <div class="row">
-              <div class="col-sm-6 col-xs-12">
+              <div class="col-sm-6 col-xs-12 pb-4">
                 <h6>Features:</h6>
                 <ul>
-                  <li>Authentication</li>
-                  <li>Create, delete and edit cards</li>
-                  <li>Move cards between lists(Drag and Drop)</li>
+                  <li>Drag and Drop cards</li>
+                  <li>Inline editing</li>
+                  <li>Countdown timer cards</li>
+                  <li>Settings (list limits, etc)</li>
                 </ul>
               </div>
               <div class="col-sm-6 col-xs-12">
@@ -180,7 +263,7 @@
                 <ul>
                   <li>React</li>
                   <li>Material UI</li>
-                  <li>Node(Express & JWT)</li>
+                  <li>Node (Express & JWT)</li>
                   <li>MongoDB</li>
                 </ul>
               </div>
@@ -407,7 +490,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Let's Talk</h2>
+            <h2 class="section-heading text-uppercase">Contact</h2>
           </div>
         </div>
         <div class="row">
@@ -420,7 +503,7 @@
                       class="form-control"
                       id="name"
                       type="text"
-                      placeholder="Your Name *"
+                      placeholder="Name *"
                       required="required"
                       data-validation-required-message="Please enter your name."
                     />
@@ -431,7 +514,7 @@
                       class="form-control"
                       id="email"
                       type="email"
-                      placeholder="Your Email *"
+                      placeholder="Email *"
                       required="required"
                       data-validation-required-message="Please enter your email address."
                     />
@@ -443,7 +526,7 @@
                     <textarea
                       class="form-control"
                       id="message"
-                      placeholder="Your Message *"
+                      placeholder="Message *"
                       required="required"
                       data-validation-required-message="Please enter a message."
                     ></textarea>
@@ -471,10 +554,7 @@
     <footer>
       <div class="container text-center">
         <div class="row">
-          <div class="col-4 my-auto">
-            Copyright &copy; 2020 Jim Skretas
-          </div>
-          <div class="col-4 my-auto">
+          <div class="col-12 col-sm-6 my-2 my-sm-auto">
             <ul class="list-inline">
               <li class="list-inline-item">
                 <a
@@ -508,7 +588,7 @@
                   data-toggle="tooltip"
                   data-placement="top"
                   title="Resume"
-                  href="https://drive.google.com/file/d/12gsVEuNyUjStm7vOn1mZz6uWXJ8EGD4V/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1VL_DZ8JRBoBmdAwIz5cMlw6MmmQimTO3/view?usp=sharing"
                   target="_blank"
                   rel="noopener"
                   aria-label="Download my resume"
@@ -517,7 +597,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-4 my-auto">
+          <div class="col-12 col-sm-6 my-2 my-sm-auto">
             <i class="far fa-envelope"></i> jimskretas@gmail.com
           </div>
         </div>
