@@ -130,9 +130,7 @@ ul.social-buttons li a {
 #mainNav .navbar-brand {
   color: var(--light-orange);
   font-weight: 900;
-  font-family: "Shadows Into Light", cursive, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--montserrat-font);
 }
 
 #mainNav .navbar-brand.active,
